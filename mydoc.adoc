@@ -1,1 +1,41 @@
-== Hello World ==
+
+Pacemaker Access Control Lists
+==============================
+Tim Serong <tserong@novell.com>
+
+== Introduction
+
+The various tools for administering Pacemaker clusters (crm_mon,
+crm shell, cibadmin and friends, Python GUI, Hawk) can be used by
+the +root+ user, or any user in the +haclient+ group. By default,
+these users have full read/write access. Starting with Pacemaker
+version 1.1.5, flexible access control lists are introduced to
+provide different levels of administration to different users.
+
+== Prerequisites
+
+* Users are regular UNIX users, so the same user accounts must
+be present on all nodes in the cluster.
+
+* All user accounts must be in the +haclient+ group.
+
+* Pacemaker 1.1.5 or newer must be installed on all cluster nodes.
+
+* The CIB must be configured to use the pacemaker-1.1 or 1.2 schema.
+This can be set by running:
+
+  cibadmin --modify --xml-text '<cib validate-with="pacemaker-1.1"/>'
+
+* The +enable-acl+ option must be set. If ACLs are not explicitly
+enabled, the previous behaviour will be used (i.e. all users in
+the +haclient+ group have full access):
+crm configure property enable-acl=true
+
+* Once this is done, ACLs can be configured as described below.
+
+* Note that the +root+ and +hacluster+ users will always have full
+access.
+
+* If nonprivileged users will be using the crm shell and CLI tools
+(as opposed to only using Hawk or the Python GUI) they will need
+to have +/usr/sbin+ added to their path.
