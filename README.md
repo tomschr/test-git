@@ -5,4 +5,3 @@ Just a Git Test Repository, nothing to see here. Move on. :)
 
 Taken from Mercurial
 
-This is added in a new branch
