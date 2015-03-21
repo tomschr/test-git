@@ -1,8 +1,12 @@
-language: c
+language: bash 
 
+# Cache Ubuntu packages:
+cache: apt
+
+# Make global environment:
 env:
     global:
-        - PATH=".":$PATH
+        - PATH=".:$PATH"
 
 before_install:
     - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ precise main universe restricted multiverse"
@@ -15,9 +19,9 @@ before_install:
     #- sudo apt-cache show docbook-xml
     #- sudo apt-cache show docbook-xsl
 
-    #install:
-    #- ./configure 
+install:
+    - ./configure 
 
-    #script:
+script:
     # - make test
-    #- echo "Done"
+    - echo "Done"
