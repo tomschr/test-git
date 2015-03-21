@@ -12,7 +12,7 @@ before_install:
     #- sudo apt-get install -y python-libxml2 python-lxml libimage-exiftool-perl 
     #- sudo apt-get install -y libxml2-utils libxslt1.1 xsltproc libxml2 xmlstarlet sgml-base sgml-data
     #- sudo apt-get install -y jing docbook docbook-xml docbook5-xml docbook-xslt libxml-commons-external-java libxmlgraphics-commons-java fop remake w3m xfig
-      - sudo apt-get install -y docbook-xml docbook-xslt
+    - sudo apt-get install -y docbook-xml docbook-xslt
 
 install:
     # - ./configure && make install
