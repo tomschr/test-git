@@ -11,7 +11,7 @@ before_install:
     #- sudo apt-get install -y jing docbook docbook-xml docbook5-xml docbook-xslt libxml-commons-external-java libxmlgraphics-commons-java fop remake w3m xfig
     - sudo apt-cache show docbook-xml
     - sudo apt-cache show docbook-xsl
-    - sudo apt-get install -y docbook-xml docbook-xslt
+    - sudo apt-get install -y docbook-xml docbook-xsl
 
 install:
     # - ./configure && make install
