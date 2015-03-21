@@ -1,7 +1,8 @@
 language: bash
 
 before_install:
-    - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ precise main universe restricted multiverse"
+    - sudo add-apt-repository -y "deb http://de.archive.ubuntu.com/ubuntu/ precise main universe restricted multiverse"
+    - sudo add-apt-repository -y ppa:docbook/ppa
     - sudo apt-get update -qq
     # failed packages
     # epubcheck docbook-xsl
