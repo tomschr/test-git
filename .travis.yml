@@ -3,7 +3,9 @@ language: bash
 before_install:
     - echo "deb http://archive.ubuntu.com/ubuntu/ precise main restricted" | sudo tee -a /etc/apt/sources.list
     - sudo apt-get update -qq
-    - sudo apt-get install -y autotools-dev checkbot dia epubcheck ghostscript imagemagick inkscape poppler-utils transfig
+    # failed packages
+    # epubcheck
+    - sudo apt-get install -y autotools-dev checkbot dia ghostscript imagemagick inkscape poppler-utils transfig
     - sudo apt-get install -y python-libxml2 python-lxml libimage-exiftool-perl 
     - sudo apt-get-install -y libxml2-utils libxslt1.1 xsltproc libxml2 xmlstarlet sgml-base sgml-data
     - sudo apt-get install -y jing docbook docbook-xml docbook5-xml docbook-xslt libxml-commons-external-java libxmlgraphics-commons-java fop remake w3m xfig
