@@ -15,9 +15,9 @@ before_install:
 
 install:
     # - ./configure && make install
-    - echo '*** install: ./configure && make install'
+    - echo '*** install section'
     - cat /etc/apt/sources.list
 
 script:
     # - make test
-    - echo '*** script: make test'
+    - echo '*** script section'
