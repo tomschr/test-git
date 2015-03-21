@@ -1,10 +1,7 @@
 language: bash
 
 before_install:
-    # - echo "deb http://archive.ubuntu.com/ubuntu/ precise main restricted" | sudo tee -a /etc/apt/sources.list
-    # - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ precise main restricted"
-    # - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ precise main "
-    - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ precise main universe"
+    - sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu/ precise main universe restricted multiverse"
     # - sudo apt-get update -qq
     # failed packages
     # epubcheck docbook-xsl
