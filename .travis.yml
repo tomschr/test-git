@@ -20,9 +20,7 @@ before_install:
     #- sudo apt-cache show docbook-xsl
 
 install:
-    - echo "The PATH: $PATH"
-    - export PATH=".:$PATH"
-    - ls
+    - ./.travis-debug
     - ./configure 
 
 script:
