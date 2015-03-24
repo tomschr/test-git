@@ -1,7 +1,8 @@
 
 Pacemaker Access Control Lists
 ==============================
-Tanja Roth 
+Tim Serong
+tserong@novell.com
 
 == Introduction
 
