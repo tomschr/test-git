@@ -8,3 +8,5 @@ Taken from Mercurial
 Another line in this manual.
 
 No, I won't edit this file. 
+
+Nope, you can't convince me.
