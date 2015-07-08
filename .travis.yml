@@ -21,9 +21,12 @@ before_install:
     - git clone https://github.com/openSUSE/suse-xsl.git suse
 
 install:
-    # - ./.travis-debug
-    - ./configure 
+    # - ./configure && make install
+    - echo '*** install section'
+    - cat /etc/apt/sources.list
 
 script:
     # - make test
-    - echo "Done"
+    - echo '*** script section'
+    # - ./.travis-debug
+    - ./configure 
