@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#
+# Tux Penguin
 
 echo -ne "\n*** Generating configure and Makefiles... *** \n\n"
 
