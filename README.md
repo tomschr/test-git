@@ -1,5 +1,5 @@
-test-git
-========
+test-git 1.0.0
+==============
 
 Just a Git Test Repository, nothing to see here. Move on. :)
 
