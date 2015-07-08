@@ -1,8 +1,6 @@
-
-Pacemaker Access Control Lists
-==============================
-Tim Serong
-tserong@novell.com
+Pacemaker Access Control Lists v1.0.1
+====================================
+Tim Serong <tserong@novell.com>
 
 == Introduction
 
